@@ -32,6 +32,9 @@ namespace szamologep
 				case "+":
 					Osszeadas();
 					break;
+				case "-":
+					Kivonas();
+					break;
 			}
 		}
 
@@ -39,6 +42,11 @@ namespace szamologep
 		{
 			float ossz = szam1 + szam2;
 			Console.WriteLine($"Két szám összeadava: {ossz}");
+		}
+		static void Kivonas()
+		{
+			float kivon = szam1 - szam2;
+			Console.WriteLine($"Két szám kivonva egymásból: {kivon}");
 		}
 	}
 }
