@@ -24,7 +24,7 @@ namespace szamologep
 			szam1 = float.Parse(Console.ReadLine());
 			Console.Write("Addj meg egy másik számot: ");
 			szam2 = float.Parse(Console.ReadLine());
-			Console.Write("Addj meg egy másik számot: ");
+			Console.Write("Addj meg egy műveleti jelet(+,-,/,%,*): ");
 			jel = Convert.ToString(Console.ReadLine());
 
 			switch (jel)
