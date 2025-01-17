@@ -35,6 +35,9 @@ namespace szamologep
 				case "-":
 					Kivonas();
 					break;
+				case "/":
+					Osztas(); 
+					break;
 			}
 		}
 
@@ -47,6 +50,11 @@ namespace szamologep
 		{
 			float kivon = szam1 - szam2;
 			Console.WriteLine($"Két szám kivonva egymásból: {kivon}");
+		}
+		static void Osztas()
+		{
+			float oszt = szam1 / szam2;
+			Console.WriteLine($"Két szám hányadosa: {oszt}");
 		}
 	}
 }
