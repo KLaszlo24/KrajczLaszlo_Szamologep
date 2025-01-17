@@ -41,6 +41,9 @@ namespace szamologep
 				case "*":
 					Szorzas();
 					break;
+				case "%":
+					Szazalek();
+					break;
 			}
 		}
 
@@ -63,6 +66,11 @@ namespace szamologep
 		{
 			float szor = szam1 * szam2;
 			Console.WriteLine($"Két szám szorzata: {szor}");
+		}
+		static void Szazalek()
+		{
+			float szaz = (szam2 / szam1) * 100;
+			Console.WriteLine($"A második szám {szaz} százaléka az elsőnek");
 		}
 	}
 }
