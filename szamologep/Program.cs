@@ -38,6 +38,9 @@ namespace szamologep
 				case "/":
 					Osztas(); 
 					break;
+				case "*":
+					Szorzas();
+					break;
 			}
 		}
 
@@ -55,6 +58,11 @@ namespace szamologep
 		{
 			float oszt = szam1 / szam2;
 			Console.WriteLine($"Két szám hányadosa: {oszt}");
+		}
+		static void Szorzas()
+		{
+			float szor = szam1 * szam2;
+			Console.WriteLine($"Két szám szorzata: {szor}");
 		}
 	}
 }
